@@ -1,4 +1,5 @@
 from django.db import models
+# vamos la
 
 # Create your models here.
 class Cargo(models.Model):
