@@ -4,9 +4,9 @@ from cargo.models import Cargo
 # Create your models here.
 
 class Servidor(models.Model):
-    nome = models.ForeignKey("Nome", on_delete=models.CASCADE, blank=True, null=True, verbose_name="Nome")
+    nome = models.ForeignKey(Person, on_delete=models.CASCADE, blank=True, null=True, verbose_name="Nome")
     matricula = models.CharField("Matricula SIAPE", max_length=10)
-    cargo = models.ForeignKey("Cargo", on_delete=models.CASCADE, blank=True, null=True, verbose_name="Cargo")
+    cargo = models.ForeignKey(Cargo, on_delete=models.CASCADE, blank=True, null=True, verbose_name="Cargo")
     inicio_vinculo = models.DateField("Inicio Vinculo")
 
     def __str__(self):

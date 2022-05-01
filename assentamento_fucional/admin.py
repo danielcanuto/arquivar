@@ -1,10 +1,9 @@
 from django.contrib import admin
 
-from pessoa.models import Person
-
+from assentamento_fucional.models import AssentamentoFuncional
 # Register your models here.
 
 
-@admin.register(Person)
+@admin.register(AssentamentoFuncional)
 class CargoAdmin(admin.ModelAdmin):
     pass
